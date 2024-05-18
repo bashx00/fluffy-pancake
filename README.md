@@ -2,7 +2,7 @@
 
 ## Description
 
-Ce bot Discord en Node.js sosu un modèle MVC permet de surveiller et de sauvegarder les messages ainsi que les événements de modération sur un serveur Discord. Il utilise une base de données MySQL pour stocker les données.
+Ce bot Discord en Node.js sous un modèle MVC permet de surveiller et de sauvegarder les messages ainsi que les événements de modération sur un serveur Discord. Il utilise une base de données MySQL pour stocker les données.
 
 ## Fonctionnalités
 
