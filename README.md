@@ -27,7 +27,7 @@ Ce bot Discord en Node.js sosu un modèle MVC permet de surveiller et de sauvega
 
 ## Documentation
 
-Consultez la documentation complète des fonctionnalités et des commandes du bot dans le fichier `DOCUMENTATION.md`.
+Consultez la documentation complète des fonctionnalités et des commandes du bot dans le fichier [DOCUMENTATION.md](https://github.com/bashx00/fluffy-pancake/blob/main/DOCUMENTATION.md).
 
 ## Auteurice
 
