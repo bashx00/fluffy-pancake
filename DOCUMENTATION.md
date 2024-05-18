@@ -6,11 +6,11 @@ Ce document fournit une documentation détaillée sur le fonctionnement, les fon
 
 Le projet est organisé en trois parties principales :
 
-1. **index.js :** Ce fichier contient le point d'entrée de l'application où le client Discord est initialisé et les événements sont écoutés.
+1. [**index.js :**](https://github.com/bashx00/fluffy-pancake/blob/main/index.js) Ce fichier contient le point d'entrée de l'application où le client Discord est initialisé et les événements sont écoutés.
 
-2. **controller.js :** Ce fichier contient la logique de contrôle du bot, y compris la gestion des événements Discord et l'appel des fonctions du modèle.
+2. [**controller.js :**](https://github.com/bashx00/fluffy-pancake/blob/main/controller.js) Ce fichier contient la logique de contrôle du bot, y compris la gestion des événements Discord et l'appel des fonctions du modèle.
 
-3. **model.js :** Ce fichier contient les fonctions pour interagir avec la base de données MySQL, y compris la sauvegarde des messages et des événements de modération.
+3. [**model.js :**](https://github.com/bashx00/fluffy-pancake/blob/main/model.js) Ce fichier contient les fonctions pour interagir avec la base de données MySQL, y compris la sauvegarde des messages et des événements de modération.
 
 ## Fonctionnalités
 
@@ -24,7 +24,7 @@ Le projet est organisé en trois parties principales :
 
 ## Configuration
 
-Pour configurer et utiliser le bot Discord de traçabilité des messages, suivez les étapes décrites dans le fichier README.md.
+Pour configurer et utiliser le bot Discord de traçabilité des messages, suivez les étapes décrites dans le fichier [README.md](https://github.com/bashx00/fluffy-pancake/blob/main/README.md).
 
 ## Développement Futur
 
