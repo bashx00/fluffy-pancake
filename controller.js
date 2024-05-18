@@ -1,19 +1,30 @@
+// Importation de la bibliothèque Discord.js
 const Discord = require('discord.js');
-const db = require('./model'); // Importer le modèle de base de données
+
+// Importation du modèle de base de données
+const db = require('./model');
+
+// Importation de la bibliothèque de gestion de fichiers
 const fs = require('fs').promises;
+
+// Importation du module path
 const path = require('path');
 
+// Création d'une instance du client Discord
 const client = new Discord.Client();
 
-// Fonction pour écrire des logs dans un fichier
+// Fonction asynchrone pour sauvegarder des logs dans un fichier
 async function saveLog(logData) {
-  const logFilePath = path.join(__dirname, 'logs', 'controller.log'); // Chemin du fichier de logs
+  // Chemin du fichier de logs
+  const logFilePath = path.join(__dirname, 'logs', 'controller.log');
   try {
+    // Création du répertoire s'il n'existe pas
     await fs.mkdir(path.dirname(logFilePath), { recursive: true });
+    // Ajout du log dans le fichier
     await fs.appendFile(logFilePath, `${logData}\n`);
-    console.log('Log saved successfully');
+    console.log('Log saved successfully'); // Affichage d'un message si le log est sauvegardé avec succès
   } catch (error) {
-    console.error('Error saving log:', error);
+    console.error('Error saving log:', error); // Affichage d'une erreur en cas d'échec de sauvegarde du log
   }
 }
 
@@ -97,6 +108,8 @@ client.on('message', async (message) => {
   }
 });
 
-client.login(process.env.DISCORD_TOKEN); // Utilisation du token stocké dans une variable d'environnement
+// Connexion du bot en utilisant le token stocké dans une variable d'environnement
+client.login(process.env.DISCORD_TOKEN);
 
+// Exportation du client pour le rendre accessible depuis d'autres fichiers
 module.exports = client;
